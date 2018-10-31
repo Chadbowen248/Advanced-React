@@ -1,16 +1,12 @@
 # import * from './generated/prisma.graphql'
 
 type Mutation {
-  createItem(title: String,
-  description: String,
-  price: Int,
-  image: String,
-  largeImage: String): Item!
+  createItem(title: String, description: String, price: Int, image: String, largeImage: String): Item!
 }
 
 type Query {
   items: [Item]!
 }
-# Anything you want visible in your API goes here 
+# Anything you want visible in your API goes here
 # What we expect to get from the DataBase/Prisma
 # This needs to mirror what's in the resolvers
