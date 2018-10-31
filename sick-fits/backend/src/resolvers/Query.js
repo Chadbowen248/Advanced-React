@@ -2,7 +2,8 @@ const { forwardTo } = require("prisma-binding")
 
 const Query = {
   // since the thing we want is already
-  items: forwardTo("db")
+  items: forwardTo("db"),
+  item: forwardTo("db")
   // async items(parent, args, ctx, info) {
   //   console.log('Getting Items!!');
   //   const items = await ctx.db.query.items();
